@@ -288,3 +288,54 @@ ul a{
 
 }
 
+/*Responsiveness*/
+/* Media Query for smartphones */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-select,
+    .search-input,
+    .search-icon {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .language {
+        margin-top: 10px;
+    }
+
+    .panel {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box {
+        width: 48%;
+        margin: 10px 1%;
+    }
+
+    .hero-msg {
+        font-size: 0.75rem;
+    }
+
+    .foot-panel2 {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .foot-panel4 {
+        font-size: 0.6rem;
+        height: auto;
+    }
+}
+
