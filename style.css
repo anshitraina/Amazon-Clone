@@ -290,52 +290,74 @@ ul a{
 
 /*Responsiveness*/
 /* Media Query for smartphones */
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Media Query for smartphones */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        text-align: center;
-        padding: 10px;
+        align-items: center;
     }
 
-    .nav-search {
-        width: 100%;
+    .nav-logo {
         margin-top: 10px;
     }
 
-    .search-select,
-    .search-input,
-    .search-icon {
-        width: 100%;
+    .nav-address,
+    .nav-search,
+    .language,
+    .nav-signin,
+    .nav-return,
+    .nav-cart {
         margin: 5px 0;
     }
 
-    .language {
-        margin-top: 10px;
-    }
-
     .panel {
-        flex-direction: column;
-        text-align: center;
+        justify-content: space-between;
     }
 
-    .box {
-        width: 48%;
-        margin: 10px 1%;
+    .hero-section {
+        height: 200px;
     }
 
     .hero-msg {
         font-size: 0.75rem;
+        padding: 10px;
     }
 
-    .foot-panel2 {
+    .shop-section {
         flex-direction: column;
-        text-align: center;
-        height: auto;
+        align-items: center;
     }
 
+    .box {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .foot-panel2,
     .foot-panel4 {
-        font-size: 0.6rem;
-        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        margin-top: 10px;
     }
 }
 
+/* Original styles (outside media query) */
+/* ... (your original CSS) */
